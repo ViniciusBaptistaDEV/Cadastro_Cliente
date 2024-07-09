@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div id="alertas-mensagens"></div> <!-- Aqui será informado os alertas de sucesso e de erro -->
+
+        <header>
+            <h1>CADASTRO DE CLIENTES</h1>
+            <button id="botaoinicio" class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#formulario">Inicie seu cadastro</button>
+        </header>
+        
+        <form class="collapse" id="formulario">
+            <label class="form-label" for="nome">Digite seu nome:</label>
+            <input maxlength="31" class="form-control" type="text" id="nome" name="nome">
+            <label class="form-label" for="telefone">Digite seu telefone:</label>
+            <input class="form-control" id="telefone" type="tel" placeholder="(__) _________" name="telefone">
+            <label class="form-label" for="email">Digite seu email:</label>
+            <input class="form-control" type="email" id="email" placeholder="email@email.com" name="email">
+            <div id="checkbox" class="form-check form-switch">
+                <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site.</label>
+                <input class="form-check-input" type="checkbox" id="aceito-termos" name="aceito-termos">
+            </div>
+
+            <button id="botaoenviar" class="btn btn-success" type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./JS/jquery.validate.min.js"></script>
+    <script src="./JS/jquery.mask.min.js"></script>
+    <script src="./JS/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
